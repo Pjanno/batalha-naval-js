@@ -1,0 +1,16 @@
+.block {
+  width: 2.5vw;
+  height: 5vh;
+  border-radius: 15px;
+  border: 3px solid white;
+}
+
+.color-block{
+  background-color: teal;
+}
+.color-block-miss{
+  background-color: cadetblue;
+}
+.color-block-hit{
+  background-color: red;
+}
