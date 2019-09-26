@@ -17,62 +17,58 @@
     </nav>
     <div class="container justify-content-center">
       <!--Texto e regras-->
-      <div class="bg-primary mt-5 p-4 rounded">
-        <p class="text-white-50">
-          <span class="font-weight-bold text-white">Bem vindo ao batalha naval!</span><br> 
-          Esse jogo está sendo feito apenas<br>
-          pra testar alguns exemplos de<br>
-          um livro sobre javascript.
-        </p>
-        <p class="text-white-50">
-          <span class="font-weight-bold text-white">O jogo funciona da seguinte forma:</span><br>
-          No gráfico ao lado temos as coordenadas<br>
-          dos possíveis alvos.<br>
-          Você só precisa digitar a letra da coluna e o<br>
-          número da casa para o palpite.<br>
-          Você ganha o jogo quando abater todos os navios.
-        </p>
+      <div class="bg-primary mt-5 p-4 rounded" style="display: flex; align-content:center; justify-content:center; flex-flow: row;">
+        <div style="margin: 2%">
+          <p class="text-white-50">
+            <span class="font-weight-bold text-white">Bem vindo ao batalha naval!</span><br> 
+            Esse jogo está sendo feito apenas<br>
+            pra testar alguns exemplos de<br>
+            um livro sobre javascript.
+          </p>
+          <p class="text-white-50">
+            <span class="font-weight-bold text-white">O jogo funciona da seguinte forma:</span><br>
+            No gráfico ao lado temos as coordenadas<br>
+            dos possíveis alvos.<br>
+            Você só precisa digitar a letra da coluna e o<br>
+            número da casa para o palpite.<br>
+            Você ganha o jogo quando abater todos os navios.
+          </p>
+        </div>
+        <video autoplay muted loop src="vdo/navio.mp4" width="50%"></video>
       </div>
+      <p></p>
       <!--Gráfico do mapa-->
-      <div class="bg-light rounded p-2">
-        <table>
-          <thead>Coordenadas</thead>
-            <tr id="LA">
-              <td id="00" onclick="atacar(this.id)" class="block color-block"></td>
-              <td id="01" onclick="atacar(this.id)" class="block color-block"></td>
-              <td id="02" onclick="atacar(this.id)" class="block color-block"></td>
-              <td id="03" onclick="atacar(this.id)" class="block color-block"></td>
-              <td id="04" onclick="atacar(this.id)" class="block color-block"></td>
-            </tr>
-            <tr id="LB">
-              <td id="10" onclick="atacar(this.id)" class="block color-block"></td>
-              <td id="11" onclick="atacar(this.id)" class="block color-block"></td>
-              <td id="12" onclick="atacar(this.id)" class="block color-block"></td>
-              <td id="13" onclick="atacar(this.id)" class="block color-block"></td>
-              <td id="14" onclick="atacar(this.id)" class="block color-block"></td>
-            </tr>
-            <tr id="LC">
-              <td id="20" onclick="atacar(this.id)" class="block color-block"></td>
-              <td id="21" onclick="atacar(this.id)" class="block color-block"></td>
-              <td id="22" onclick="atacar(this.id)" class="block color-block"></td>
-              <td id="23" onclick="atacar(this.id)" class="block color-block"></td>
-              <td id="24" onclick="atacar(this.id)" class="block color-block"></td>
-            </tr>
-            <tr id="LD">
-              <td id="30" onclick="atacar(this.id)" class="block color-block"></td>
-              <td id="31" onclick="atacar(this.id)" class="block color-block"></td>
-              <td id="32" onclick="atacar(this.id)" class="block color-block"></td>
-              <td id="33" onclick="atacar(this.id)" class="block color-block"></td>
-              <td id="34" onclick="atacar(this.id)" class="block color-block"></td>
-            </tr>
-            <tr id="LE">
-              <td id="40" onclick="atacar(this.id)" class="block color-block"></td>
-              <td id="41" onclick="atacar(this.id)" class="block color-block"></td>
-              <td id="42" onclick="atacar(this.id)" class="block color-block"></td>
-              <td id="43" onclick="atacar(this.id)" class="block color-block"></td>
-              <td id="44" onclick="atacar(this.id)" class="block color-block"></td>
-            </tr>
-        </table>
+
+      <div class="rounded flex-container">
+        <div id="00" onclick="atacar(this.id)" class="flex-item"></div>
+        <div id="01" onclick="atacar(this.id)" class="flex-item"></div>
+        <div id="02" onclick="atacar(this.id)" class="flex-item"></div>
+        <div id="03" onclick="atacar(this.id)" class="flex-item"></div>
+        <div id="04" onclick="atacar(this.id)" class="flex-item"></div>
+        
+        <div id="10" onclick="atacar(this.id)" class="flex-item"></div>
+        <div id="11" onclick="atacar(this.id)" class="flex-item"></div>
+        <div id="12" onclick="atacar(this.id)" class="flex-item"></div>
+        <div id="13" onclick="atacar(this.id)" class="flex-item"></div>
+        <div id="14" onclick="atacar(this.id)" class="flex-item"></div>
+
+        <div id="20" onclick="atacar(this.id)" class="flex-item"></div>
+        <div id="21" onclick="atacar(this.id)" class="flex-item"></div>
+        <div id="22" onclick="atacar(this.id)" class="flex-item"></div>
+        <div id="23" onclick="atacar(this.id)" class="flex-item"></div>
+        <div id="24" onclick="atacar(this.id)" class="flex-item"></div>
+
+        <div id="30" onclick="atacar(this.id)" class="flex-item"></div>
+        <div id="31" onclick="atacar(this.id)" class="flex-item"></div>
+        <div id="32" onclick="atacar(this.id)" class="flex-item"></div>
+        <div id="33" onclick="atacar(this.id)" class="flex-item"></div>
+        <div id="34" onclick="atacar(this.id)" class="flex-item"></div>
+
+        <div id="40" onclick="atacar(this.id)" class="flex-item"></div>
+        <div id="41" onclick="atacar(this.id)" class="flex-item"></div>
+        <div id="42" onclick="atacar(this.id)" class="flex-item"></div>
+        <div id="43" onclick="atacar(this.id)" class="flex-item"></div>
+        <div id="44" onclick="atacar(this.id)" class="flex-item"></div>
       </div>
     </div>
   </body>

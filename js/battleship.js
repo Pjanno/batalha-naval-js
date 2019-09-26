@@ -6,28 +6,20 @@ function preencheNavios(){
     for (let j=0; j<5; j++) {
       let trueOrFalse = Math.round(Math.random())
 
-      if (trueOrFalse == 1) {
-        linhaConstruida.push(true)
-        console.log("true")
-      }  else {
-        console.log("false")
-        linhaConstruida.push(false)
-      }
+      linhaConstruida.push(trueOrFalse === 1)
     }
     matriz.push(linhaConstruida)
   }
 }
 
 function atacar(id){
-  alert(id)
   let coordenadas = id.split("")
   let linhaAlvo = matriz[coordenadas[0]]
   if (linhaAlvo[coordenadas[1]]){ // Vai ver se é true ou false
-    document.getElementById(id).classList.remove("color-block")
     alert("Acertou!")
     document.getElementById(id).classList.add("color-block-hit")
+    $(`#${id}`).append(`<img src="img/navio.png" style="width: 50px; align-items: center">`)
   } else {
-    document.getElementById(id).classList.remove("color-block")
     alert("Apenas água...")
     document.getElementById(id).classList.add("color-block-miss")
   }
